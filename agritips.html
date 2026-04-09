@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdi Kassim | Agri-Tips Management with CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <h2>Abdi<span>Kassim</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="agritips.html" class="active">Agri-Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Manage <span class="highlight">Agri-Tips</span></h1>
+            <p>Full CRUD Operations with JSON Server Backend | Created by Abdi Kassim</p>
+        </div>
+    </section>
+
+    <section class="crud-section">
+        <div class="container">
+            <div class="crud-form-container">
+                <h2><i class="fas fa-plus-circle"></i> Create New Agricultural Tip</h2>
+                <p class="api-status" id="apiStatus">
+                    <i class="fas fa-circle"></i> API Status: Checking...
+                </p>
+                <form id="createTipForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Tip Title <span style="color:red">*</span></label>
+                            <input type="text" id="tipTitle" placeholder="e.g., How to Prevent Maize Lethal Necrosis" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Tip Description <span style="color:red">*</span></label>
+                            <textarea id="tipDescription" rows="3" placeholder="Detailed agricultural advice for farmers..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-save"></i> Create Tip (POST to API)
+                    </button>
+                </form>
+            </div>
+
+            <div class="tips-display-container">
+                <h2><i class="fas fa-database"></i> All Agricultural Tips (From JSON Server)</h2>
+                <div id="tipsContainer" class="tips-grid">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading tips from Abdi Kassim's API...</p>
+                        <p style="font-size:0.8rem; margin-top:10px">Make sure json-server is running on port 3000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-edit"></i> Update Agricultural Tip</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <form id="updateTipForm">
+                <input type="hidden" id="updateTipId">
+                <div class="form-group">
+                    <label>Tip Title</label>
+                    <input type="text" id="updateTitle" required>
+                </div>
+                <div class="form-group">
+                    <label>Tip Description</label>
+                    <textarea id="updateDescription" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-save"></i> Update Tip (PUT to API)
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abdi Kassim</h3>
+                    <p>Professional Agricultural Expert & Web Developer. Empowering Kenyan farmers through technology and innovation since 2024.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="agritips.html">Agri-Tips</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Abdi</h3>
+                    <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                    <p><i class="fas fa-envelope"></i> abdi.kassim@kilimo.co.ke</p>
+                    <p><i class="fas fa-globe"></i> www.abdikassim.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abdi Kassim - Professional Agricultural Expert | INS 311 Web Design CAT | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

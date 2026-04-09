@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agricultural_tips>
+    <tip>
+        <title>🌽 Maize Crop Rotation</title>
+        <description>Rotate maize with legumes like beans, cowpeas, or groundnuts to fix nitrogen in the soil naturally. This practice reduces fertilizer costs by up to 30% and breaks pest cycles.</description>
+    </tip>
+    <tip>
+        <title>💧 Smart Water Conservation</title>
+        <description>Use drip irrigation or mulching with dry grass/crop residue to retain soil moisture. Farmers using this technique save up to 60% of water compared to traditional methods.</description>
+    </tip>
+    <tip>
+        <title>🐛 Organic Pest Control - Fall Armyworm</title>
+        <description>Mix neem oil (5ml) with liquid soap (2ml) in 1 liter of water. Spray early morning or late evening. Repeat every 5 days for effective control without chemicals.</description>
+    </tip>
+    <tip>
+        <title>📈 Best Time to Sell Maize</title>
+        <description>Storage is key! Sell maize between January and March when prices are highest (KSh 4,500-5,000 per 90kg bag) rather than during harvest (KSh 2,500-3,000).</description>
+    </tip>
+    <tip>
+        <title>🥔 Irish Potato Disease Prevention</title>
+        <description>Use certified seeds and practice 4-year crop rotation. Never plant potatoes in the same field more than once every 4 years to prevent late blight buildup.</description>
+    </tip>
+    <tip>
+        <title>🐄 Zero-Grazing Benefits</title>
+        <description>Zero-grazing units increase milk production by 40% compared to open grazing. One cow can produce 15-20 liters daily with proper feeding using napier grass and dairy meal.</description>
+    </tip>
+</agricultural_tips>
